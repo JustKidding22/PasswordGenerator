@@ -1,4 +1,8 @@
-// Assignment code here
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const specialCharacter = "!@#$%^&*-_=+;:/?";
+
+
 
 
 // Get references to the #generate element
