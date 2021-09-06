@@ -1,6 +1,17 @@
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+// Password Requirements
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const specialCharacter = "!@#$%^&*-_=+;:/?";
+const number = "1234567890";
+
+const genBtn = document.querySelector("#generate");
+
+// User chooses requirements for password
+let anyCharacters;
+let anyNumber;
+let anySpecial;
+let passwordLength;
+
+// Password Requirements, At least One Must Be Chosen
 
 
 
