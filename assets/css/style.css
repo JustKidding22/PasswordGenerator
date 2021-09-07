@@ -60,6 +60,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  column-gap: 2rem;
 }
 
 .card-footer::before {
