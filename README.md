@@ -10,8 +10,8 @@ User can choose up to 4 different password requirements:
 3. Numbers
 4. Symbols
 
-## Page Preview :
-
+## ScreenShot
+![homepage](assets/img/homepage.png)
 
 
 
