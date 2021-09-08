@@ -1,21 +1,21 @@
+// Defining Variables
 const charAmountRange = document.getElementById('charAmountRange')
 const charAmountNumb = document.getElementById('charAmountNumb')
 const includeUpperCaseEl = document.getElementById('includeUpperCase')
 const includeNumbersEl = document.getElementById('includeNumbers')
 const includeSymbolsEl = document.getElementById('includeSymbols')
-
 const passwordDisplay = document.getElementById('passwordDisplay')
 const generateBtn = document.getElementById('generate')
-
 const upperCaseCharCodes = arrayLowToHigh(65, 90)
 const lowerCaseCharCodes = arrayLowToHigh(97, 122)
 const numberCharCodes = arrayLowToHigh(48, 57)
 const symbolCharCodes = arrayLowToHigh(33, 47).concat(arrayLowToHigh(58, 64)).concat(arrayLowToHigh(91, 96)).concat(arrayLowToHigh(123, 126))
 
-
+// Number of Characters scroll effect
 charAmountRange.addEventListener('input', syncAmount)
 charAmountNumb.addEventListener('input', syncAmount)
 
+// Button Click, Generate Password Functionality
 generateBtn.addEventListener('click', () => {
  
   const charAmount = charAmountNumb.value
@@ -27,6 +27,7 @@ generateBtn.addEventListener('click', () => {
   
 })
 
+// For Loop for Generating Random Passwords
 function generatePassword(charAmount, includeUpperCase, includeNumbers, includeSymbols) {
   let charCodes = lowerCaseCharCodes
   if (includeUpperCase) charCodes = charCodes.concat(upperCaseCharCodes)

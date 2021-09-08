@@ -10,12 +10,14 @@ User can choose up to 4 different password requirements:
 3. Numbers
 4. Symbols
 
+## Made with :
+* HTML
+* CSS
+* JavaScript
+
+
 ## ScreenShot
 ![homepage](assets/img/homepage.png)
-
-
-
-
 
 
 ## Live Link
