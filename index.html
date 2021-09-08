@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
+
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+        <div class="random-password">
+          <textarea class="passwordDisplay" id="passwordDisplay">Generated Password</textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+
+          <label for="charAmountNumb">Number of Characters</label>
+          <input type="range" min="8" max="128" value="8" id="charAmountRange">
+          <input type="number" min="8" max="128" value="8" id="charAmountNumb">
+
+          <label for="includeUpperCase">Include Upper Case</label>
+          <input type="checkbox" id="includeUpperCase">
+          
+          <label for="includeNumbers">Include Numbers</label>
+          <input type="checkbox" id="includeNumbers">
+
+          <label for="includeSymbols">Include Symbols</label>
+          <input type="checkbox" id="includeSymbols">
+          
+           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
